@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Oswald, Inter } from "next/font/google";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Biker‑Chronicles",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen font-sans antialiased">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
